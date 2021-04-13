@@ -13,5 +13,8 @@ namespace EntityLayerr.Concrete
         public string WriterSurname { get; set; }
         public string WriterImage { get; set; }
         public string WriterPassword { get; set; }
+
+        public ICollection<Heading> Headings { get; set; }
+        public ICollection<Content> Contents { get; set; }
     }
 }
