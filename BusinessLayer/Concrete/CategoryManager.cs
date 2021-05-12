@@ -12,8 +12,6 @@ namespace BusinessLayer.Concrete
 {
     public class CategoryManager : ICategoryService
     {
-        //Dependency Injection Araştır
-
         ICategoryDal _categoryDal;
 
         public CategoryManager(ICategoryDal categoryDal)
@@ -24,14 +22,26 @@ namespace BusinessLayer.Concrete
         public void CategoryAdd(Category category)
         {
             _categoryDal.Insert(category);
+        }
 
+        public void CategoryDelete(Category category)
+        {
+            _categoryDal.Delete(category);
+        }
+
+        public void CategoryUpdate(Category category)
+        {
+            _categoryDal.Update(category);
+        }
+
+        public Category GetById(int categoryID)
+        {
+            return _categoryDal.Get(x=>x.CategoryID == categoryID);
         }
 
         public List<Category> GetCategoryList()
         {
             return _categoryDal.List();
         }
-
-        
     }
 }
