@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<h2>İSTATİSTİKLER</h2>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Toplam Kategori Sayısı</h5>
+        <p class="card-text">@ViewBag.CategoryCount</p>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Yazılım Kategorisine Ait Başlık Sayısı</h5>
+        <p class="card-text">@ViewBag.HeadingCount</p>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Yazar Adında 'A' Harfi Geçen Yazar Sayısı</h5>
+        <p class="card-text">@ViewBag.WriterCount</p>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">En Fazla Başlığa Ait Kategori Adı</h5>
+        <p class="card-text">@ViewBag.MaxCategory</p>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Durum Farkları</h5>
+        <p class="card-text">@ViewBag.StatusCount</p>
+    </div>
+</div>
+
