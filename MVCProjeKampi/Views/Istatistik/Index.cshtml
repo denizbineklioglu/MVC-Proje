@@ -4,40 +4,40 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-<h2>İSTATİSTİKLER</h2>
+<h2 style="text-align:center">İSTATİSTİKLER</h2>
 
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-        <h5 class="card-title">Toplam Kategori Sayısı</h5>
-        <p class="card-text">@ViewBag.CategoryCount</p>
+    <div class="card" style="width: 30rem; background-color: cyan; float:left;margin-left:10px">
+        <div class="card-body">
+            <h5 class="card-title" style="font-size: 25px">Toplam Kategori Sayısı</h5>
+            <p class="card-text" style="text-align:center; font-size: 30px">@ViewBag.CategoryCount</p>
+        </div>
     </div>
-</div>
 
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-        <h5 class="card-title">Yazılım Kategorisine Ait Başlık Sayısı</h5>
-        <p class="card-text">@ViewBag.HeadingCount</p>
+    <div class="card" style="width: 30rem; background-color:aquamarine;float:right">
+        <div class="card-body">
+            <h5 class="card-title" style="font-size: 25px ; text-align:center;margin-left:10px" >Yazılım Kategorisine Ait Başlık Sayısı</h5>
+            <p class="card-text" style="text-align:center; font-size: 30px; text-align:center">@ViewBag.HeadingCount</p>
+        </div>
     </div>
-</div>
 
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-        <h5 class="card-title">Yazar Adında 'A' Harfi Geçen Yazar Sayısı</h5>
-        <p class="card-text">@ViewBag.WriterCount</p>
+    <div class="card" style="width: 30rem; background-color:chartreuse; float: right">
+        <div class="card-body">
+            <h5 class="card-title" style="font-size: 25px; text-align:center; margin-right:10px">Yazar Adında 'A' Harfi Geçen Yazar Sayısı</h5>
+            <p class="card-text" style="text-align:center;font-size:30px;text-align:center">@ViewBag.WriterCount</p>
+        </div>
     </div>
-</div>
 
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-        <h5 class="card-title">En Fazla Başlığa Ait Kategori Adı</h5>
-        <p class="card-text">@ViewBag.MaxCategory</p>
+    <div class="card" style="width: 30rem; background-color: darkorange;float:right;margin-right:10px">
+        <div class="card-body">
+            <h5 class="card-title" style="font-size: 25px ; text-align:center">En Fazla Başlığa Ait Kategori Adı</h5>
+            <p class="card-text" style="text-align:center;font-size:30px;text-align:center">@ViewBag.MaxCategory</p>
+        </div>
     </div>
-</div>
 
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-        <h5 class="card-title">Durum Farkları</h5>
-        <p class="card-text">@ViewBag.StatusCount</p>
+    <div class="card" style="width: 30rem; background-color: fuchsia;margin-left:10px">
+        <div class="card-body">
+            <h5 class="card-title" style="font-size: 25px ; text-align:center">Durum Farkları</h5>
+            <p class="card-text" style="text-align:center; font-size:30px;text-align:center">@ViewBag.StatusCount</p>
+        </div>
     </div>
-</div>
 
