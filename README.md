@@ -1,4 +1,4 @@
 # MVC-Proje
-Murat Yücedağ'ın Mvc Proje Kampı Kodları
+İstatistik Ödevi
 
 <img src="İstatistikler-crop.PNG">
