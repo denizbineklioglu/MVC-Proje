@@ -30,6 +30,8 @@ namespace BusinessLayer.ValidatonRules
 
             RuleFor(x => x.WriterName).MaximumLength(50)
             .WithMessage("Lütfen 50 karakterden fazla değer girişi yapmayın.");
+
+            RuleFor(x => x.WriterTitle).NotEmpty().WithMessage("Title boş geçemezsiniz");
         }
     }
 }
