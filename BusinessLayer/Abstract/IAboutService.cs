@@ -12,7 +12,7 @@ namespace BusinessLayer.Abstract
         List<About> GetAboutList();
         void AboutAdd(About about);
         About GetById(int aboutID);
-        void AboutDelete(Category about);
-        void AboutUpdate(Category about);
+        void AboutDelete(About about);
+        void AboutUpdate(About about);
     }
 }
