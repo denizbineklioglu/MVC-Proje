@@ -6,6 +6,7 @@
 }
 @{ string color = ""; }
 @{ string status = "";}
+@{ string color1 = ""; }
 
 <!DOCTYPE html>
 <html>
@@ -85,9 +86,11 @@
                             {
                                 case true:
                                     status = "Pasifleştir";
+                                    color1 = "badge badge-success";
                                     break;
                                 case false:
                                     status = "Aktifleştir";
+                                    color1 = "badge badge-warning";
                                     break;
                                 default:
                                     break;
@@ -113,7 +116,7 @@
                                     </ul>
                                 </td>
                                 <td>
-                                    @item.HeadingStatus
+                                    <span class="@color1">@item.HeadingStatus</span>
                                 </td>
                                 <td class="project-state">
                                     <span class="@color">@item.Category.CategoryName</span>
