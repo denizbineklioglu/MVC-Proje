@@ -60,6 +60,7 @@
     <Compile Include="Abstract\IContentService.cs" />
     <Compile Include="Abstract\IHeadingService.cs" />
     <Compile Include="Abstract\IIstatistikService.cs" />
+    <Compile Include="Abstract\IMessageService.cs" />
     <Compile Include="Abstract\IWriterService.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Concrete\AboutManager.cs" />
@@ -68,10 +69,12 @@
     <Compile Include="Concrete\ContentManager.cs" />
     <Compile Include="Concrete\HeadingManager.cs" />
     <Compile Include="Concrete\IstatistikManager.cs" />
+    <Compile Include="Concrete\MessageManager.cs" />
     <Compile Include="Concrete\WriterManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidatonRules\CategoryValidator.cs" />
     <Compile Include="ValidatonRules\ContactValidator.cs" />
+    <Compile Include="ValidatonRules\MessageValidator.cs" />
     <Compile Include="ValidatonRules\WriterValidator.cs" />
   </ItemGroup>
   <ItemGroup>
