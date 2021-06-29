@@ -56,6 +56,7 @@
     <Compile Include="Abstract\IContactDal.cs" />
     <Compile Include="Abstract\IContentDal.cs" />
     <Compile Include="Abstract\IHeadingDal.cs" />
+    <Compile Include="Abstract\IImageFileDal.cs" />
     <Compile Include="Abstract\IMessageDal.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IWriterDal.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="EntityFramework\EfContactDal.cs" />
     <Compile Include="EntityFramework\EfContentDal.cs" />
     <Compile Include="EntityFramework\EfHeadingDal.cs" />
+    <Compile Include="EntityFramework\EfImageFileDal.cs" />
     <Compile Include="EntityFramework\EfMessageDal.cs" />
     <Compile Include="EntityFramework\EfWriterDal.cs" />
     <Compile Include="Migrations\202104251901193_mig1.cs" />
@@ -101,6 +103,18 @@
     <Compile Include="Migrations\202106281803417_add_message.cs" />
     <Compile Include="Migrations\202106281803417_add_message.designer.cs">
       <DependentUpon>202106281803417_add_message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106291309575_add_contactdate.cs" />
+    <Compile Include="Migrations\202106291309575_add_contactdate.designer.cs">
+      <DependentUpon>202106291309575_add_contactdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106291407577_add_imagefile.cs" />
+    <Compile Include="Migrations\202106291407577_add_imagefile.designer.cs">
+      <DependentUpon>202106291407577_add_imagefile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106291437454_add-admin.cs" />
+    <Compile Include="Migrations\202106291437454_add-admin.designer.cs">
+      <DependentUpon>202106291437454_add-admin.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -139,6 +153,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106281803417_add_message.resx">
       <DependentUpon>202106281803417_add_message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106291309575_add_contactdate.resx">
+      <DependentUpon>202106291309575_add_contactdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106291407577_add_imagefile.resx">
+      <DependentUpon>202106291407577_add_imagefile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106291437454_add-admin.resx">
+      <DependentUpon>202106291437454_add-admin.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
